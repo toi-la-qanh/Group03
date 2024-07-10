@@ -1,6 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+}
+
+.navbar {
+  position: relative;
+  bottom: -130px;
+  height: 280px;
+  width: 70px;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.navbar ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.navbar ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.navbar ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: 500;
+}
+.navbar ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  transition: 0.5s;
+}
+.icon i {
+  font-size: 24px;
+}
+.inputPost{
+    top:10px;
+    left:500px;
+    position: absolute;
+}
+.inputPost button{
+    background-color: black;
+    color: white;
+    border-radius:6px;
 }
