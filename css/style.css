@@ -8,7 +8,7 @@
 .navbar {
   position: relative;
   bottom: -130px;
-  height: 280px;
+  height: 340px;
   width: 70px;
   background-color: #fff;
   border-radius: 35px;
@@ -36,7 +36,6 @@
   align-items: center;
   width: 100%;
   text-align: center;
-  color: black;
   font-weight: 500;
 }
 .navbar ul li a .icon {
@@ -46,16 +45,73 @@
   text-align: center;
   transition: 0.5s;
 }
-.icon i {
+.navbar ul li a .icon i {
   font-size: 24px;
+  color: black;
 }
-.inputPost{
-    top:10px;
-    left:500px;
-    position: absolute;
+.navbar ul li a .icon i:hover {
+  color: gray;
 }
-.inputPost button{
-    background-color: black;
-    color: white;
-    border-radius:6px;
+.post-container {
+  top: 10px;
+  left: 340px;
+  position: absolute;
+  border-radius: 20px;
+  width: 600px;
+  margin: auto;
+  border: solid #808080;
+}
+.user-write-post {
+  text-align: center;
+}
+.user-write-post img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 40px;
+}
+.user-write-post textarea {
+  margin-bottom: -5px;
+  width:450px;
+  font-weight: 500;
+  color: black;
+  border: 0;
+}
+.user-write-post button {
+  border: white;
+  background: white;
+  color: black;
+  /* border-radius: 6px; */
+  padding: 5px;
+  margin-left: 20px;
+}
+.user-write-post button:hover {
+  color: gray;
+}
+.fetch-posts {
+  bottom: 100px;
+}
+.fetch-posts .user-name {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fetch-posts img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 40px;
+}
+.fetch-posts .post-icon button {
+  border: 0;
+  background: white;
+  color: black;
+}
+.fetch-posts .post-icon button i {
+  font-size: 20px;
+}
+.fetch-posts .post-icon button i:hover {
+  color:red;
+}
+.fetch-posts .post-icon {
+  margin-top: 10px;
 }
