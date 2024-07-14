@@ -11,205 +11,481 @@
     />
     <!-- đừng xoá cái này ^ -->
   </head>
-
   <body>
     <!-- Thanh điều hướng -->
     <div class="navbar">
-      <ul>
-        <li>
-          <a href="home.php"
-            ><span class="icon"><i class="fa-solid fa-house"></i></span
-          ></a>
-        </li>
-        <li>
-          <a href="search.php"
-            ><span class="icon"
-              ><i class="fa-solid fa-magnifying-glass"></i></span
-          ></a>
-        </li>
-        <li>
-          <a href="liked_content.php"
-            ><span class="icon"><i class="fa-solid fa-heart"></i></span
-          ></a>
-        </li>
-        <li>
-          <a href="profile.php"
-            ><span class="icon"><i class="fa-solid fa-user"></i></span
-          ></a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><i class="fa-solid fa-ellipsis"></i></span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- Bài đăng  -->
-    <div class="post-container">
-      <!-- Người dùng đăng bài -->
-      <div class="user-write-post">
-        <form action="">
-          <table>
-            <tr>
-              <td>
-                <img src="images/default-avatar.png" alt="" />
-              </td>
-              <td>
-                <textarea
-                  type="text"
-                  placeholder="Hôm nay có gì mới ?"
-                ></textarea>
-              </td>
-              <td>
-                <button><strong>Đăng</strong></button>
-              </td>
-            </tr>
-          </table>
-        </form>
+      <!-- Các khoá học -->
+      <div class="navbar-courses">
+        <select name="" id="">
+          <option value="">Các khoá học</option>
+          <option value="">Khoá cơ bản</option>
+          <option value="">Khoá nâng cao</option>
+          <option value="">Khoá lập trình web</option>
+          <option value="">Khoá cơ sở dữ liệu</option>
+          <option value="">Khoá lập trình thiết bị di động</option>
+        </select>
       </div>
+      <!-- Thanh tìm kiếm -->
+      <form action="">
+        <div class="search-bar">
+          <span><i class="fa-solid fa-search"></i></span>
+          <input
+            type="text"
+            value=""
+            placeholder="Tìm kiếm khoá học hay gì đó ..."
+          />
+        </div>
+      </form>
+      <!-- <div class="logo-navbar">logo</div> -->
+      <div class="auth-navbar">
+        <a href="register.php"><button class="register">Đăng ký</button></a>
+        <a href="login.php"><button class="login">Đăng nhập</button></a>
+      </div>
+    </div>
+    <!-- phần thân sau navbar -->
+    <div class="body-container">
+      <div class="title">Các khoá học</div>
       <hr />
-      <!-- Xem bài đăng -->
-      <div class="fetch-posts">
-        <table>
-          <tr>
-            <td>
-              <img src="images/default-avatar.png" alt="" />
-            </td>
-            <td>
-              <div class="user-name"><strong>Mèo con hư hỏng</strong></div>
-              <div>Tại sao Jack lại bỏ con?</div>
-              <div class="post-icon">
-                <button>
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <span style="margin-left: 4px">100</span>
-                <span style="margin-left: 40px"></span>
-                <button>
-                  <i class="fa-regular fa-comment"> </i>
-                </button>
-                <span style="margin-left: 4px">500</span>
+      <form action="">
+        <div class="courses-data">
+          <!-- Phân loại -->
+          <div class="category">
+            <!-- Tên loại -->
+            <div class="category-name">Khoá cơ bản</div>
+            <!-- Sản phẩm -->
+            <div class="box-container">
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
               </div>
-            </td>
-          </tr>
-        </table>
-        <hr />
-        <table>
-          <tr>
-            <td>
-              <img src="images/default-avatar.png" alt="" />
-            </td>
-            <td>
-              <div class="user-name"><strong>Mèo con hư hỏng</strong></div>
-              <div>Tại sao Jack lại bỏ con?</div>
-              <div class="post-icon">
-                <button>
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <span style="margin-left: 4px">100</span>
-                <span style="margin-left: 40px"></span>
-                <button>
-                  <i class="fa-regular fa-comment"> </i>
-                </button>
-                <span style="margin-left: 4px">500</span>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
               </div>
-            </td>
-          </tr>
-        </table>
-        <hr />
-        <table>
-          <tr>
-            <td>
-              <img src="images/default-avatar.png" alt="" />
-            </td>
-            <td>
-              <div class="user-name"><strong>Mèo con hư hỏng</strong></div>
-              <div>Tại sao Jack lại bỏ con?</div>
-              <div class="post-icon">
-                <button>
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <span style="margin-left: 4px">100</span>
-                <span style="margin-left: 40px"></span>
-                <button>
-                  <i class="fa-regular fa-comment"> </i>
-                </button>
-                <span style="margin-left: 4px">500</span>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
               </div>
-            </td>
-          </tr>
-        </table>
-        <hr />
-        <table>
-          <tr>
-            <td>
-              <img src="images/default-avatar.png" alt="" />
-            </td>
-            <td>
-              <div class="user-name"><strong>Mèo con hư hỏng</strong></div>
-              <div>Tại sao Jack lại bỏ con?</div>
-              <div class="post-icon">
-                <button>
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <span style="margin-left: 4px">100</span>
-                <span style="margin-left: 40px"></span>
-                <button>
-                  <i class="fa-regular fa-comment"> </i>
-                </button>
-                <span style="margin-left: 4px">500</span>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
               </div>
-            </td>
-          </tr>
-        </table>
-        <hr>
-        <table>
-          <tr>
-            <td>
-              <img src="images/default-avatar.png" alt="" />
-            </td>
-            <td>
-              <div class="user-name"><strong>Mèo con hư hỏng</strong></div>
-              <div>Tại sao Jack lại bỏ con?</div>
-              <div class="post-icon">
-                <button>
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <span style="margin-left: 4px">100</span>
-                <span style="margin-left: 40px"></span>
-                <button>
-                  <i class="fa-regular fa-comment">
-                  </i>
-                </button>
-                <span style="margin-left: 4px">500</span>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
               </div>
-            </td>
-          </tr>
-        </table>
-        <hr>
-        <table>
-          <tr>
-            <td>
-              <img src="images/default-avatar.png" alt="" />
-            </td>
-            <td>
-              <div class="user-name"><strong>Mèo con hư hỏng</strong></div>
-              <div>Tại sao Jack lại bỏ con?</div>
-              <div class="post-icon">
-                <button>
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <span style="margin-left: 4px">100</span>
-                <span style="margin-left: 40px"></span>
-                <button>
-                  <i class="fa-regular fa-comment">
-                  </i>
-                </button>
-                <span style="margin-left: 4px">500</span>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
               </div>
-            </td>
-          </tr>
-        </table>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <!-- Tên loại -->
+            <div class="category-name">Khoá nâng cao</div>
+            <!-- Sản phẩm -->
+            <div class="box-container">
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+              <div class="box">
+                <a href="#">
+                  <img
+                    width="230px"
+                    height="200px"
+                    src="images/C-language.png"
+                    alt=""
+                  />
+                </a>
+                <h3>Tên</h3>
+                <p>Giá tiền</p>
+                <a href="#"
+                  ><button class="purchase-button">Mua ngay</button></a
+                >
+                <a href="#">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="icon-bar-and-arrow">
+      <div class="right-arrow">
+        <button onclick="handleRightArrow()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- thanh icon -->
+      <div class="icon-bar">
+        <ul>
+          <li>
+            <button>
+              <a href="home.php"
+                ><span class="icon"><i class="fa-solid fa-house"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="liked_content.php"
+                ><span class="icon"><i class="fa-solid fa-heart"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="cart.php"
+                ><span class="icon"
+                  ><i class="fa-solid fa-cart-shopping"></i></span
+              ></a>
+            </button>
+          </li>
+          <!-- Menu thanh công cụ -->
+          <li>
+            <button onclick="showMoreElement()">
+              <span class="icon"><i class="fa-solid fa-ellipsis"> </i></span>
+            </button>
+          </li>
+          <li class="login-icon">
+            <button>
+              <a href="login.php"
+                ><span class="icon"
+                  ><i class="fa-solid fa-right-to-bracket"></i></span
+              ></a>
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
+    <!-- Mũi tên trái ở thanh công cụ -->
+    <div class="left-arrow">
+      <button onclick="handleLeftArrow()">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </div>
+
+    <script>
+      // Xử lý nút ... ở thanh công cụ icon
+      var count = 0;
+      function showMoreElement() {
+        document.querySelector(
+          ".icon-bar-and-arrow .icon-bar ul .login-icon"
+        ).style.display = "flex";
+        count += 1;
+        if (count == 2) {
+          document.querySelector(
+            ".icon-bar-and-arrow .icon-bar ul .login-icon"
+          ).style.display = "none";
+          count = 0;
+        }
+      }
+      // Xử lý nút mũi tên
+      function handleRightArrow() {
+        document.querySelector(".icon-bar-and-arrow").style.display = "none";
+        document.querySelector(".left-arrow button").style.display = "flex";
+      }
+      function handleLeftArrow() {
+        document.querySelector(".icon-bar-and-arrow").style.display = "flex";
+        document.querySelector(".left-arrow button").style.display = "none";
+      }
+      //Xử lý resize window responsive
+      window.onload = function () {
+        currentWidth(window.innerWidth);
+      };
+
+      window.onresize = function () {
+        currentWidth(window.innerWidth);
+      };
+      function currentWidth() {
+        if (window.innerWidth < 800) {
+          document.querySelector(".navbar .auth-navbar").style.display = "none";
+          document.querySelector(
+            ".navbar .navbar-courses select"
+          ).style.display = "none";
+        } else {
+          document.querySelector(
+            ".navbar .navbar-courses select"
+          ).style.display = "";
+          document.querySelector(".navbar .auth-navbar").style.display = "";
+        }
+      }
+    </script>
   </body>
 </html>

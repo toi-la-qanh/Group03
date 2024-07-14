@@ -2,116 +2,254 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: sans-serif; */
 }
-
+body {
+  font-family: sans-serif;
+}
 .navbar {
-  position: relative;
-  bottom: -130px;
-  height: 340px;
-  width: 70px;
-  background-color: #fff;
-  border-radius: 35px;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: white;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
-.navbar ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.navbar ul li {
+.navbar .navbar-courses select {
+  display: inherit;
   position: relative;
-  list-style: none;
+  width: 220px;
+  height: 30px;
+  top: 35px;
+  color: #72bcd4;
+  font-weight: 700;
+  /* background-color: #72bcd4; */
+  border: white;
+  border-radius: 10px;
+  text-align: center;
+}
+.navbar .search-bar {
+  display: flex;
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+  top: 35px;
+  left: 40px;
+}
+.navbar .search-bar input {
+  border: 0;
+  width: 300px;
+  border-radius: 10px;
+  outline: 0;
+}
+.navbar .search-bar input::placeholder {
+  color: #72bcd4;
+}
+.navbar .search-bar span {
+  border: 0;
+  display: flex;
+  position: relative;
+  left: 5px;
+  top: 6px;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+.navbar .search-bar span i {
+  color: #72bcd4;
+}
+.navbar .search-bar span i:hover {
+  color: gray;
+}
+.navbar .logo-navbar {
+  display: inherit;
+  position: relative;
+}
+.navbar .auth-navbar {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-left: auto;
+  background: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+}
+.navbar .auth-navbar .register {
+  color: #72bcd4;
+  background: white;
+  border: 0;
   width: 70px;
+  height: 40px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.navbar .auth-navbar .register:hover {
+  color: #d3d3d3;
+}
+.navbar .auth-navbar .login {
+  color: white;
+  background: #72bcd4;
+  border: 0;
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.navbar .auth-navbar .login:hover {
+  background: #d3d3d3;
+}
+.body-container .title {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  color: #72bcd4;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.body-container .courses-data .category .category-name {
+  margin: 20px;
+  font-weight:750;
+  color: gray;
+}
+.body-container .courses-data .category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+.body-container .courses-data .category .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px 20px;
+  color: gray;
+}
+.body-container .courses-data .category .box-container .box h3{
+  padding: 10px;
+}
+.body-container .courses-data .category .box-container .box p {
+  padding-bottom: 10px;
+}
+.body-container .courses-data .category .box-container .box .purchase-button {
+  color: white;
+  background: #72bcd4;
+  border: 0 solid white;
+  border-radius: 25px;
+  font-weight: 700;
+  height: 30px;
+  width: 80px;
+  font-size: 15px;
+}
+.body-container
+  .courses-data
+  .category
+  .box-container
+  .box
+  .purchase-button:hover {
+  background: gray;
+}
+.body-container
+  .courses-data
+  .category
+  .box-container
+  .box
+  .view-detail-button {
+  color: #72bcd4;
+  background: inherit;
+  border: 0 solid white;
+  border-radius: 25px;
+  font-weight: 700;
+  height: 30px;
+  width: 110px;
+  font-size: 15px;
+}
+.body-container
+  .courses-data
+  .category
+  .box-container
+  .box
+  .view-detail-button:hover {
+  color: gray;
+}
+.icon-bar-and-arrow {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 160px;
+}
+.icon-bar-and-arrow .icon-bar ul {
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  border: 2px solid gray;
+}
+.icon-bar-and-arrow .icon-bar ul .login-icon {
+  display: none;
+  list-style: none;
+  width: 50px;
   height: 70px;
   z-index: 1;
 }
-.navbar ul li a {
+.icon-bar ul li {
+  position: relative;
+  list-style: none;
+  width: 50px;
+  height: 70px;
+  z-index: 1;
+}
+.icon-bar ul li button {
+  border: 0;
+  background: inherit;
+  width: 100%;
   position: relative;
   display: flex;
+  /* margin-left:10px; */
   justify-content: center;
   align-items: center;
-  width: 100%;
   text-align: center;
   font-weight: 500;
 }
-.navbar ul li a .icon {
+.icon-bar ul li button .icon {
   position: relative;
   display: block;
   line-height: 75px;
   text-align: center;
   transition: 0.5s;
 }
-.navbar ul li a .icon i {
+.icon-bar ul li button .icon i {
+  font-size: 22px;
+  color: #72bcd4;
+}
+.icon-bar ul li button .icon i:hover {
+  color: gray;
+}
+.icon-bar-and-arrow .right-arrow button {
+  /* margin-right:auto;
+  position: fixed;
+  display:inherit;
+  flex-direction: column;*/
+  margin-top: 130px;
+  background: inherit;
+  border: 0;
   font-size: 24px;
-  color: black;
+  color: #72bcd4;
 }
-.navbar ul li a .icon i:hover {
+.icon-bar-and-arrow .right-arrow button i:hover {
   color: gray;
 }
-.post-container {
-  top: 10px;
-  left: 340px;
-  position: absolute;
-  border-radius: 20px;
-  width: 600px;
-  margin: auto;
-  border: solid #808080;
-}
-.user-write-post {
-  text-align: center;
-}
-.user-write-post img {
-  width: 45px;
-  border-radius: 50%;
-  margin-right: 10px;
-  height: 40px;
-}
-.user-write-post textarea {
-  margin-bottom: -5px;
-  width:450px;
-  font-weight: 500;
-  color: black;
+.left-arrow button {
+  right: 0;
+  position: fixed;
+  display: flex;
+  top: 290px;
+  background: inherit;
   border: 0;
+  font-size: 24px;
+  color: #72bcd4;
 }
-.user-write-post button {
-  border: white;
-  background: white;
-  color: black;
-  /* border-radius: 6px; */
-  padding: 5px;
-  margin-left: 20px;
-}
-.user-write-post button:hover {
+.left-arrow button i:hover {
   color: gray;
-}
-.fetch-posts {
-  bottom: 100px;
-}
-.fetch-posts .user-name {
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-.fetch-posts img {
-  width: 45px;
-  border-radius: 50%;
-  margin-right: 10px;
-  height: 40px;
-}
-.fetch-posts .post-icon button {
-  border: 0;
-  background: white;
-  color: black;
-}
-.fetch-posts .post-icon button i {
-  font-size: 20px;
-}
-.fetch-posts .post-icon button i:hover {
-  color:red;
-}
-.fetch-posts .post-icon {
-  margin-top: 10px;
 }
