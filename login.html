@@ -1,0 +1,166 @@
+<!-- <?php -->
+<!-- // include "database/sql_connection.php";
+
+// if (isset($_POST['submit'])) {
+//     $email = $_POST['email'];
+//     $pass = $_POST['password'];
+
+//     $database = new SQLConnect();
+//     $query = $database->connect();
+//     $Execquery = $query->prepare("SELECT * FROM `account_guest` WHERE email = '$email'");
+//     $Execquery->execute();
+//     $user = $Execquery->fetch();
+//     if ($user) {
+//         if (password_verify($_POST['password'], $user['password'])) {
+//             session_start();
+//             $_SESSION['user_id'] = $user['id'];
+//             sleep(2);
+//             header('location:home.php');
+//         }
+//     }
+//     $message[] = "Sai tài khoản hoặc mật khẩu!";
+// } -->
+<!-- ?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Đăng nhập</title>
+  </head>
+
+  <body>
+    <!-- Thanh điều hướng -->
+    <div class="navbar">
+      <!-- Các khoá học -->
+      <div class="navbar-courses">
+        <select name="" id="">
+          <option value="">Các khoá học</option>
+          <option value="">Khoá cơ bản</option>
+          <option value="">Khoá nâng cao</option>
+          <option value="">Khoá lập trình web</option>
+          <option value="">Khoá cơ sở dữ liệu</option>
+          <option value="">Khoá lập trình thiết bị di động</option>
+        </select>
+      </div>
+      <!-- Thanh tìm kiếm -->
+      <form action="">
+        <div class="search-bar">
+          <span><i class="fa-solid fa-search"></i></span>
+          <input
+            type="text"
+            value=""
+            placeholder="Tìm kiếm khoá học hay gì đó ..."
+          />
+        </div>
+      </form>
+      <!-- <div class="logo-navbar">logo</div> -->
+      <div class="auth-navbar">
+        <a href="register.html"><button class="register">Đăng ký</button></a>
+        <a href="login.html"><button class="login">Đăng nhập</button></a>
+      </div>
+    </div>
+    <div class="icon-bar-and-arrow">
+      <!-- Mũi tên phải ở thanh công cụ -->
+      <div class="right-arrow">
+        <button onclick="handleRightArrow()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- thanh icon -->
+      <div class="icon-bar">
+        <ul>
+          <li>
+            <button>
+              <a href="home.html"
+                ><span class="icon"><i class="fa-solid fa-house"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="user.html"
+                ><span class="icon"><i class="fa-solid fa-user"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="cart.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-cart-shopping"></i></span
+              ></a>
+            </button>
+          </li>
+          <!-- Menu thanh công cụ -->
+          <li>
+            <button onclick="showMoreElement()">
+              <span class="icon"><i class="fa-solid fa-ellipsis"> </i></span>
+            </button>
+          </li>
+          <li class="login-icon">
+            <button>
+              <a href="login.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-right-to-bracket"></i></span
+              ></a>
+            </button>
+          </li>
+          <li class="question-icon">
+            <button>
+              <a href="faq.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-circle-question"></i></span
+              ></a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Mũi tên trái ở thanh công cụ -->
+    <div class="left-arrow">
+      <button onclick="handleLeftArrow()">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </div>
+    <!-- Phần thân sau navbar -->
+    <div class="body-login">
+      <div class="form-login">
+        <ul>
+          <li class="title">Đăng nhập tài khoản của bạn</li>
+          <form action="">
+            <li>
+              <span>
+                <i class="fa-solid fa-envelope"></i
+                ><input type="text" placeholder="Nhập email..." />
+              </span>
+            </li>
+            <li>
+              <span>
+                <i class="fa-solid fa-lock"></i
+                ><input type="password" placeholder="Nhập mật khẩu..." />
+              </span>
+            </li>
+          </form>
+          <li>
+            <a href="home.html"><button>Đăng nhập</button></a>
+            <span
+              ><small class="question">Chưa có tài khoản?</small>
+              <a href="register.html" class="register-link"
+                ><small>Đăng ký ngay</small></a
+              ></span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

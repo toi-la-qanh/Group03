@@ -38,15 +38,15 @@
       </form>
       <!-- <div class="logo-navbar">logo</div> -->
       <div class="auth-navbar">
-        <a href="register.php"><button class="register">Đăng ký</button></a>
-        <a href="login.php"><button class="login">Đăng nhập</button></a>
+        <a href="register.html"><button class="register">Đăng ký</button></a>
+        <a href="login.html"><button class="login">Đăng nhập</button></a>
       </div>
     </div>
     <!-- phần thân sau navbar -->
     <div class="body-container">
       <div class="title">Các khoá học</div>
       <hr />
-      <form action="">
+      <!-- <form action=""> -->
         <div class="courses-data">
           <!-- Phân loại -->
           <div class="category">
@@ -65,7 +65,7 @@
                 </a>
                 <h3>Tên</h3>
                 <p>Giá tiền</p>
-                <a href="#"
+                <a href="cart.html"
                   ><button class="purchase-button">Mua ngay</button></a
                 >
                 <a href="#">
@@ -384,9 +384,10 @@
             </div>
           </div>
         </div>
-      </form>
+      <!-- </form> -->
     </div>
     <div class="icon-bar-and-arrow">
+      <!-- Mũi tên phải ở thanh công cụ -->
       <div class="right-arrow">
         <button onclick="handleRightArrow()">
           <i class="fa-solid fa-arrow-right"></i>
@@ -397,21 +398,21 @@
         <ul>
           <li>
             <button>
-              <a href="home.php"
+              <a href="home.html"
                 ><span class="icon"><i class="fa-solid fa-house"></i></span
               ></a>
             </button>
           </li>
           <li>
             <button>
-              <a href="liked_content.php"
-                ><span class="icon"><i class="fa-solid fa-heart"></i></span
+              <a href="user.html"
+                ><span class="icon"><i class="fa-solid fa-user"></i></span
               ></a>
             </button>
           </li>
           <li>
             <button>
-              <a href="cart.php"
+              <a href="cart.html"
                 ><span class="icon"
                   ><i class="fa-solid fa-cart-shopping"></i></span
               ></a>
@@ -425,9 +426,17 @@
           </li>
           <li class="login-icon">
             <button>
-              <a href="login.php"
+              <a href="login.html"
                 ><span class="icon"
                   ><i class="fa-solid fa-right-to-bracket"></i></span
+              ></a>
+            </button>
+          </li>
+          <li class="question-icon">
+            <button>
+              <a href="faq.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-circle-question"></i></span
               ></a>
             </button>
           </li>
@@ -440,52 +449,7 @@
         <i class="fa-solid fa-arrow-left"></i>
       </button>
     </div>
-
-    <script>
-      // Xử lý nút ... ở thanh công cụ icon
-      var count = 0;
-      function showMoreElement() {
-        document.querySelector(
-          ".icon-bar-and-arrow .icon-bar ul .login-icon"
-        ).style.display = "flex";
-        count += 1;
-        if (count == 2) {
-          document.querySelector(
-            ".icon-bar-and-arrow .icon-bar ul .login-icon"
-          ).style.display = "none";
-          count = 0;
-        }
-      }
-      // Xử lý nút mũi tên
-      function handleRightArrow() {
-        document.querySelector(".icon-bar-and-arrow").style.display = "none";
-        document.querySelector(".left-arrow button").style.display = "flex";
-      }
-      function handleLeftArrow() {
-        document.querySelector(".icon-bar-and-arrow").style.display = "flex";
-        document.querySelector(".left-arrow button").style.display = "none";
-      }
-      //Xử lý resize window responsive
-      window.onload = function () {
-        currentWidth(window.innerWidth);
-      };
-
-      window.onresize = function () {
-        currentWidth(window.innerWidth);
-      };
-      function currentWidth() {
-        if (window.innerWidth < 800) {
-          document.querySelector(".navbar .auth-navbar").style.display = "none";
-          document.querySelector(
-            ".navbar .navbar-courses select"
-          ).style.display = "none";
-        } else {
-          document.querySelector(
-            ".navbar .navbar-courses select"
-          ).style.display = "";
-          document.querySelector(".navbar .auth-navbar").style.display = "";
-        }
-      }
-    </script>
+    <script src="js/script.js"></script>
   </body>
+  <footer>hello</footer>
 </html>

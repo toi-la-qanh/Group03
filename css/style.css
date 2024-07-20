@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 .navbar {
   display: flex;
@@ -111,7 +112,7 @@ body {
 }
 .body-container .courses-data .category .category-name {
   margin: 20px;
-  font-weight:750;
+  font-weight: 750;
   color: gray;
 }
 .body-container .courses-data .category .box-container {
@@ -127,7 +128,7 @@ body {
   padding: 30px 20px;
   color: gray;
 }
-.body-container .courses-data .category .box-container .box h3{
+.body-container .courses-data .category .box-container .box h3 {
   padding: 10px;
 }
 .body-container .courses-data .category .box-container .box p {
@@ -193,6 +194,13 @@ body {
   height: 70px;
   z-index: 1;
 }
+.icon-bar-and-arrow .icon-bar ul .question-icon {
+  display: none;
+  list-style: none;
+  width: 50px;
+  height: 70px;
+  z-index: 1;
+}
 .icon-bar ul li {
   position: relative;
   list-style: none;
@@ -206,7 +214,6 @@ body {
   width: 100%;
   position: relative;
   display: flex;
-  /* margin-left:10px; */
   justify-content: center;
   align-items: center;
   text-align: center;

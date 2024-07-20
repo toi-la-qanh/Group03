@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Thanh điều hướng -->
+    <div class="navbar">
+      <!-- Các khoá học -->
+      <div class="navbar-courses">
+        <select name="" id="">
+          <option value="">Các khoá học</option>
+          <option value="">Khoá cơ bản</option>
+          <option value="">Khoá nâng cao</option>
+          <option value="">Khoá lập trình web</option>
+          <option value="">Khoá cơ sở dữ liệu</option>
+          <option value="">Khoá lập trình thiết bị di động</option>
+        </select>
+      </div>
+      <!-- Thanh tìm kiếm -->
+      <form action="">
+        <div class="search-bar">
+          <span><i class="fa-solid fa-search"></i></span>
+          <input
+            type="text"
+            value=""
+            placeholder="Tìm kiếm khoá học hay gì đó ..."
+          />
+        </div>
+      </form>
+      <!-- <div class="logo-navbar">logo</div> -->
+      <div class="auth-navbar">
+        <a href="register.html"><button class="register">Đăng ký</button></a>
+        <a href="login.html"><button class="login">Đăng nhập</button></a>
+      </div>
+    </div>
+    <!-- phần thân sau navbar -->
+    <div class="body-cart">
+      <div class="title">Giỏ hàng</div>
+      <hr />
+      <hr />
+      <table>
+        <tr>
+          <th>STT</th>
+          <th>Tên khoá học</th>
+          <th>Đơn giá</th>
+          <th>Số lượng</th>
+          <th>Tổng</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>4</td>
+          <td>
+            <button onclick="handleMinusButton()">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <input type="text" value="1" />
+            <button onclick="handlePlusButton()">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </td>
+          <td>5</td>
+          <td>
+            <button class="delete-button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Tổng tiền:</td>
+          <td>Tiền</td>
+        </tr>
+      </table>
+    </div>
+    <div class="icon-bar-and-arrow">
+      <!-- Mũi tên phải ở thanh công cụ -->
+      <div class="right-arrow">
+        <button onclick="handleRightArrow()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- thanh icon -->
+      <div class="icon-bar">
+        <ul>
+          <li>
+            <button>
+              <a href="home.html"
+                ><span class="icon"><i class="fa-solid fa-house"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="user.html"
+                ><span class="icon"><i class="fa-solid fa-user"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="cart.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-cart-shopping"></i></span
+              ></a>
+            </button>
+          </li>
+          <!-- Menu thanh công cụ -->
+          <li>
+            <button onclick="showMoreElement()">
+              <span class="icon"><i class="fa-solid fa-ellipsis"> </i></span>
+            </button>
+          </li>
+          <li class="login-icon">
+            <button>
+              <a href="login.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-right-to-bracket"></i></span
+              ></a>
+            </button>
+          </li>
+          <li class="question-icon">
+            <button>
+              <a href="faq.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-circle-question"></i></span
+              ></a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Mũi tên trái ở thanh công cụ -->
+    <div class="left-arrow">
+      <button onclick="handleLeftArrow()">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </div>
+    <br>  
+    <a href="home.html"
+      ><button class="return-button">
+        <i class="fa-solid fa-arrow-left"></i> Quay về trang chủ
+      </button></a
+    >
+    <a href="payment.html"
+      ><button class="next-button">
+        Đi đến trang thanh toán <i class="fa-solid fa-arrow-right"></i></button
+    ></a>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

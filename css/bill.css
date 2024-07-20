@@ -1,0 +1,93 @@
+/* .body-payment .title {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  color: #72bcd4;
+  font-weight: 600;
+  margin-top: 20px;
+} */
+/* *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+  
+} */
+.body-payment{
+  display: flex;
+  justify-content: center;  
+}
+.body-payment .form-payment{
+  width: 700px;
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid gray;
+}
+.body-payment .form-payment .row{
+  display: flex;
+  gap: 15px;
+}
+.body-payment .form-payment  .row .column{
+  flex: 1 1 250px;
+}
+.body-payment .form-payment .row .column .title{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #72bcd4;
+}
+.body-payment .form-payment .row .column .input-box{
+  margin: 15px 0;
+}
+.body-payment .form-payment .row .column .input-box input{
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.body-payment .form-payment .row .column .input-box span{
+  display: block;
+  margin-bottom: 10px;
+}
+.body-payment .form-payment .row .column .input-box .image-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.body-payment .form-payment .row .column .input-box .image-container img{
+  /* margin-right: 10px; */
+  width: 120px;
+}
+.body-payment .form-payment .row .column .input-box .image-container p{
+  flex: 1;
+  font-size: 14px;
+}
+.body-payment .form-payment .row .column .button-box{
+  display: flex;
+  justify-content: space-between;
+}
+.body-payment .form-payment .row .column .button-box .left-button{
+  background-color: white;
+  color: #72bcd4;
+  border: 0;
+  font-weight: 700;
+  height: 40px;
+}
+.body-payment .form-payment .row .column .button-box .left-button:hover{
+  color: gray;
+}
+.body-payment .form-payment .row .column .button-box .right-button{
+  background-color: #72bcd4;
+  color: white;
+  border: 0;
+  font-weight: 700;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
+.body-payment .form-payment .row .column .button-box .right-button:hover{
+  background-color: gray;
+}
