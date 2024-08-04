@@ -5,38 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <!-- đừng xoá cái này ^ -->
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css" />
   </head>
   <body>
     <!-- Thanh điều hướng -->
     <div class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/logo.png" alt="Logo" /></a>
+      </div>
       <!-- Các khoá học -->
       <div class="navbar-courses">
-        <select name="" id="">
-          <option value="">Các khoá học</option>
-          <option value="">Khoá cơ bản</option>
-          <option value="">Khoá nâng cao</option>
-          <option value="">Khoá lập trình web</option>
-          <option value="">Khoá cơ sở dữ liệu</option>
-          <option value="">Khoá lập trình thiết bị di động</option>
-        </select>
+        <button>Các khoá học<i class="fa-solid fa-chevron-down"></i></button>
+        <ul>
+          <a href="#basic-course"><li>Khoá cơ bản</li></a>
+          <a href="#advanced-course"><li>Khoá nâng cao</li></a>
+          <li>Khoá lập trình web</li>
+          <li>Khoá cơ sở dữ liệu</li>
+          <li>Khoá lập trình thiết bị di động</li>
+        </ul>
       </div>
       <!-- Thanh tìm kiếm -->
-      <form action="">
-        <div class="search-bar">
-          <span><i class="fa-solid fa-search"></i></span>
+      <div class="search-bar">
+        <span><i class="fa-solid fa-search"></i></span>
+        <form action="">
           <input
             type="text"
             value=""
             placeholder="Tìm kiếm khoá học hay gì đó ..."
           />
-        </div>
-      </form>
-      <!-- <div class="logo-navbar">logo</div> -->
+        </form>
+      </div>
       <div class="auth-navbar">
         <a href="register.html"><button class="register">Đăng ký</button></a>
         <a href="login.html"><button class="login">Đăng nhập</button></a>
@@ -47,335 +45,144 @@
       <div class="title">Các khoá học</div>
       <hr />
       <!-- <form action=""> -->
-        <div class="courses-data">
-          <!-- Phân loại -->
-          <div class="category">
-            <!-- Tên loại -->
-            <div class="category-name">Khoá cơ bản</div>
-            <!-- Sản phẩm -->
-            <div class="box-container">
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
+      <div class="courses-data">
+        <!-- Phân loại -->
+        <div class="category">
+          <!-- Tên loại -->
+          <div class="category-name" id="basic-course">Khoá cơ bản</div>
+          <!-- Sản phẩm -->
+          <div class="box-container">
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Khoá học lập trình C</h3>
+              <p>300.000</p>
+              <p>Tình trạng: Còn hàng</p>
+              <div class="button-container">
+                <a href="payment.html"
+                  ><button class="purchase-button">Mua ngay</button>
                 </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="cart.html"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
-                  <button class="view-detail-button">
-                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
-                </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
-                  <button class="view-detail-button">
-                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
-                </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
-                  <button class="view-detail-button">
-                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
-                </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
-                  <button class="view-detail-button">
-                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
-                </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
-                  <button class="view-detail-button">
-                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
-                </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
-                  <button class="view-detail-button">
-                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
-                </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
-                  <button class="view-detail-button">
-                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
-                </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
+                <a href="detail.html">
                   <button class="view-detail-button">
                     Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="category">
-            <!-- Tên loại -->
-            <div class="category-name">Khoá nâng cao</div>
-            <!-- Sản phẩm -->
-            <div class="box-container">
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="payment.html"
+                  ><button class="purchase-button">Mua ngay</button>
                 </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
+                <a href="detail.html">
                   <button class="view-detail-button">
                     Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
               </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
                 </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
+                <a href="detail.html">
                   <button class="view-detail-button">
                     Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
               </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
                 </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
+                <a href="detail.html">
                   <button class="view-detail-button">
                     Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
               </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
                 </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
+                <a href="detail.html">
                   <button class="view-detail-button">
                     Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
               </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
                 </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
+                <a href="detail.html">
                   <button class="view-detail-button">
                     Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
               </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
                 </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
+                <a href="detail.html">
                   <button class="view-detail-button">
                     Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
               </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
                 </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
-                  <button class="view-detail-button">
-                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-              <div class="box">
-                <a href="#">
-                  <img
-                    width="230px"
-                    height="200px"
-                    src="images/C-language.png"
-                    alt=""
-                  />
-                </a>
-                <h3>Tên</h3>
-                <p>Giá tiền</p>
-                <a href="#"
-                  ><button class="purchase-button">Mua ngay</button></a
-                >
-                <a href="#">
+                <a href="detail.html">
                   <button class="view-detail-button">
                     Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
                   </button>
@@ -384,6 +191,150 @@
             </div>
           </div>
         </div>
+        <div class="category">
+          <!-- Tên loại -->
+          <div class="category-name" id="advanced-course">Khoá nâng cao</div>
+          <!-- Sản phẩm -->
+          <div class="box-container">
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
+                </a>
+                <a href="detail.html">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
+                </a>
+                <a href="detail.html">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
+                </a>
+                <a href="detail.html">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
+                </a>
+                <a href="detail.html">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
+                </a>
+                <a href="detail.html">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
+                </a>
+                <a href="detail.html">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
+                </a>
+                <a href="detail.html">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="box">
+              <a href="#">
+                <img src="images/C-language.png" alt="" />
+              </a>
+              <h3>Tên</h3>
+              <p>Giá tiền</p>
+              <div class="button-container">
+                <a href="cart.html"
+                  ><button class="purchase-button">Mua ngay</button>
+                </a>
+                <a href="detail.html">
+                  <button class="view-detail-button">
+                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- </form> -->
     </div>
     <div class="icon-bar-and-arrow">
@@ -398,21 +349,21 @@
         <ul>
           <li>
             <button>
-              <a href="home.html"
+              <a href="#"
                 ><span class="icon"><i class="fa-solid fa-house"></i></span
               ></a>
             </button>
           </li>
           <li>
             <button>
-              <a href="user.html"
+              <a href="profile.html"
                 ><span class="icon"><i class="fa-solid fa-user"></i></span
               ></a>
             </button>
           </li>
           <li>
             <button>
-              <a href="cart.html"
+              <a href="payment.html"
                 ><span class="icon"
                   ><i class="fa-solid fa-cart-shopping"></i></span
               ></a>
@@ -434,7 +385,7 @@
           </li>
           <li class="question-icon">
             <button>
-              <a href="faq.html"
+              <a href="about.html"
                 ><span class="icon"
                   ><i class="fa-solid fa-circle-question"></i></span
               ></a>
@@ -451,5 +402,38 @@
     </div>
     <script src="js/script.js"></script>
   </body>
-  <footer>hello</footer>
+  <footer>
+    <div class="row">
+      <div class="column">
+        <h4>Khoá học</h4>
+        <ul>
+          <li><a href="#">Khoá cơ bản</a></li>
+          <li><a href="#">Khoá nâng cao</a></li>
+          <li><a href="#">Khoá học lập trình web</a></li>
+          <li><a href="#">Khoá học cơ sở dữ liệu</a></li>
+          <li><a href="#">Khoá học lập trình thiết bị di động</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Giới thiệu</h4>
+        <ul>
+          <li><a href="about.html">Về trang web</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Câu hỏi thường gặp</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn cách mua hàng</a></li>
+          <li><a href="#">Hướng dẫn chỉnh sửa trang cá nhân</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Liên hệ</h4>
+        <ul>
+          <li><a href="#">Email góp ý</a></li>
+          <li><a href="#">Hotline hỗ trợ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </html>

@@ -1,180 +1,191 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  h1, h2 {
-    font-weight: bold;
-    color: #338fb7;
-    margin-bottom: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  h2 {
-    margin-top: 40px;
-  }
-  
-  #content h2 {
-    margin-top: 200px;
-    text-align: center;
-    font-size: 50px;
-  }
-  
-  #content p {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 30px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  /*Thanh điều hướng*/
-  
-  nav {
-    background-color: #43a0f2;
-    padding: 10px;
-    text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #72bcd4;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+#content h2 {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 50px;
+}
+
+#content p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: gray;
+}
+
+button{
+  background-color: #72bcd4;
+  color: #fff;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/*Thanh điều hướng*/
+
+nav {
+  background-color: #72bcd4;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #23527c;
+}
+
+/* Quản lý mặt hàng */
+
+#product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#product-table th, #product-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#product-table th {
+  background-color: #72bcd4;
+  color: #fff;
+}
+
+#product-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#product-form {
+  margin-top: 40px;
+}
+
+#product-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#product-form input[type="text"], #product-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#product-form button[type="submit"] {
+  background-color: #72bcd4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#product-form button[type="submit"]:hover {
+  background-color: #72bcd4;
+}
+
+/* Quản lý đơn hàng */
+
+#order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#order-table th, #order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#order-table th {
+  background-color: #72bcd4;
+  color: #fff;
+}
+
+#order-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#update-order-status-form {
+  margin-top: 40px;
+}
+
+#update-order-status-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#update-order-status-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#update-order-status-form button[type="submit"] {
+  background-color: #72bcd4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#update-order-status-form button[type="submit"]:hover {
+  background-color: #72bcd4;
+}
+
+
+@media (max-width: 768px) {
+  #product-table, #order-table {
+    font-size: 14px;
   }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+  #product-table th, #product-table td, #order-table th, #order-table td {
+    padding: 5px;
   }
-  
-  nav li {
-    margin: 0 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  
-  nav a:hover {
-    color: #23527c;
-  }
-  
-  /* Quản lý mặt hàng */
-  
-  #product-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  #product-table th, #product-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  #product-table th {
-    background-color: #337ab7;
-    color: #fff;
-  }
-  
-  #product-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  #product-form {
-    margin-top: 40px;
-  }
-  
-  #product-form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  #product-form input[type="text"], #product-form input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  #product-form button[type="submit"] {
-    background-color: #337ab7;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #product-form button[type="submit"]:hover {
-    background-color: #23527c;
-  }
-  
-  /* Quản lý đơn hàng */
-  
-  #order-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  #order-table th, #order-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  #order-table th {
-    background-color: #337ab7;
-    color: #fff;
-  }
-  
-  #order-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  #update-order-status-form {
-    margin-top: 40px;
-  }
-  
-  #update-order-status-form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  #update-order-status-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  #update-order-status-form button[type="submit"] {
-    background-color: #337ab7;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #update-order-status-form button[type="submit"]:hover {
-    background-color: #23527c;
-  }
-  
-  
-  @media (max-width: 768px) {
-    #product-table, #order-table {
-      font-size: 14px;
-    }
-    #product-table th, #product-table td, #order-table th, #order-table td {
-      padding: 5px;
-    }
-  }
+}

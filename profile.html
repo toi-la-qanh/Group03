@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang cá nhân</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css" />
+  </head>
+  <body>
+    <!-- Thanh điều hướng -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/logo.png" alt="Logo" /></a>
+      </div>
+      <!-- Các khoá học -->
+      <div class="navbar-courses">
+        <button>Các khoá học<i class="fa-solid fa-chevron-down"></i></button>
+        <ul>
+          <li>Khoá cơ bản</li>
+          <li>Khoá nâng cao</li>
+          <li>Khoá lập trình web</li>
+          <li>Khoá cơ sở dữ liệu</li>
+          <li>Khoá lập trình thiết bị di động</li>
+        </ul>
+      </div>
+      <!-- Thanh tìm kiếm -->
+      <div class="search-bar">
+        <span><i class="fa-solid fa-search"></i></span>
+        <form action="">
+          <input
+            type="text"
+            value=""
+            placeholder="Tìm kiếm khoá học hay gì đó ..."
+          />
+        </form>
+      </div>
+      <div class="auth-navbar">
+        <a href="register.html"><button class="register">Đăng ký</button></a>
+        <a href="login.html"><button class="login">Đăng nhập</button></a>
+      </div>
+    </div>
+    <!-- phần thân sau navbar -->
+    <div class="body-profile">
+      <div class="title">Quản lý hồ sơ</div>
+      <div class="profile">
+        <div class="row">
+          <div class="column">
+            <div class="image">
+              <img src="images/default-avatar.png" alt="" />
+            </div>
+            <form action=""><input type="hidden" id="profile-image" /></form>
+          </div>
+          <div class="column">
+            <form action="">
+              <div class="input-box">
+                <span>Họ và tên: </span>
+                <input
+                  type="text"
+                  name=""
+                  id="name"
+                  value="Nguyễn Quốc Anh"
+                  readonly
+                />
+              </div>
+              <div class="input-box">
+                <span>Email: </span>
+                <input
+                  type="text"
+                  name=""
+                  id="email"
+                  value="quocanh2003vn427@gmail.com"
+                  readonly
+                />
+              </div>
+              <div class="input-box">
+                <span>Số điện thoại: </span>
+                <input type="text" name="" id="phone" readonly />
+              </div>
+              <div class="input-box">
+                <span>Địa chỉ: </span>
+                <input type="text" name="" id="address" readonly />
+              </div>
+            </form>
+            <button class="edit-button" onclick="editButton()">
+              Chỉnh sửa
+            </button>
+            <span class="after-edit">
+              <button class="save-button" onclick="saveButton()">Lưu</button>
+              <button class="cancel-button" onclick="cancelButton()">
+                Huỷ bỏ
+              </button></span
+            >
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="info-order">
+        <div class="title">Thông tin đơn hàng</div>
+        <div class="order">
+          <h3>Đơn hàng <span name="id">#1</span></h3>
+          <div class="content">
+            <div class="image-container">
+              <img src="images/C-language.png" alt="" />
+              <p>
+                <span>Khoá học lập trình C</span>
+                <span>Phân loại: Khoá cơ bản</span>
+                <span>330.000 đồng</span>
+                <span>Số lượng: 1</span>
+              </p>
+            </div>
+            <p class="info-user">
+              <span class="info-title">Thông tin người tạo đơn:</span>
+              <span>Nguyễn Quốc Anh</span>
+              <span>0982920731</span>
+              <span>quocanh2003vn427@gmail.com</span>
+              <span>Quận 12, TP HCM</span>
+            </p>
+            <p class="status">
+              <span class="status-title">Trạng thái:</span>
+              <span name="">Chưa xác nhận</span>
+            </p>
+            <p class="created-date">
+              <span class="date-title">Ngày tạo đơn:</span>
+              <span>13/8/2024</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="home.html"
+      ><button class="return-button">
+        <i class="fa-solid fa-chevron-left"></i>Quay về trang chủ
+      </button></a
+    >
+    <div class="icon-bar-and-arrow">
+      <!-- Mũi tên phải ở thanh công cụ -->
+      <div class="right-arrow">
+        <button onclick="handleRightArrow()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- thanh icon -->
+      <div class="icon-bar">
+        <ul>
+          <li>
+            <button>
+              <a href="home.html"
+                ><span class="icon"><i class="fa-solid fa-house"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="#"
+                ><span class="icon"><i class="fa-solid fa-user"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="payment.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-cart-shopping"></i></span
+              ></a>
+            </button>
+          </li>
+          <!-- Menu thanh công cụ -->
+          <li>
+            <button onclick="showMoreElement()">
+              <span class="icon"><i class="fa-solid fa-ellipsis"> </i></span>
+            </button>
+          </li>
+          <li class="login-icon">
+            <button>
+              <a href="login.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-right-to-bracket"></i></span
+              ></a>
+            </button>
+          </li>
+          <li class="question-icon">
+            <button>
+              <a href="about.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-circle-question"></i></span
+              ></a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Mũi tên trái ở thanh công cụ -->
+    <div class="left-arrow">
+      <button onclick="handleLeftArrow()">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+  <footer>
+    <div class="row">
+      <div class="column">
+        <h4>Khoá học</h4>
+        <ul>
+          <li><a href="#">Khoá cơ bản</a></li>
+          <li><a href="#">Khoá nâng cao</a></li>
+          <li><a href="#">Khoá học lập trình web</a></li>
+          <li><a href="#">Khoá học cơ sở dữ liệu</a></li>
+          <li><a href="#">Khoá học lập trình thiết bị di động</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Giới thiệu</h4>
+        <ul>
+          <li><a href="about.html">Về trang web</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Câu hỏi thường gặp</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn cách mua hàng</a></li>
+          <li><a href="#">Hướng dẫn chỉnh sửa trang cá nhân</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Liên hệ</h4>
+        <ul>
+          <li><a href="#">Email góp ý</a></li>
+          <li><a href="#">Hotline hỗ trợ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>

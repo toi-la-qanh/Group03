@@ -30,10 +30,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/login.css" />
     <title>Đăng ký</title>
@@ -42,28 +39,32 @@
   <body>
     <!-- Thanh điều hướng -->
     <div class="navbar">
+      <!-- logo -->
+      <div class="logo">
+        <a href="home.html"><img src="images/logo.png" alt="Logo" /></a>
+      </div>
       <!-- Các khoá học -->
       <div class="navbar-courses">
-        <select name="" id="">
-          <option value="">Các khoá học</option>
-          <option value="">Khoá cơ bản</option>
-          <option value="">Khoá nâng cao</option>
-          <option value="">Khoá lập trình web</option>
-          <option value="">Khoá cơ sở dữ liệu</option>
-          <option value="">Khoá lập trình thiết bị di động</option>
-        </select>
+        <button>Các khoá học<i class="fa-solid fa-chevron-down"></i></button>
+        <ul>
+          <li>Khoá cơ bản</li>
+          <li>Khoá nâng cao</li>
+          <li>Khoá lập trình web</li>
+          <li>Khoá cơ sở dữ liệu</li>
+          <li>Khoá lập trình thiết bị di động</li>
+        </ul>
       </div>
       <!-- Thanh tìm kiếm -->
-      <form action="">
-        <div class="search-bar">
-          <span><i class="fa-solid fa-search"></i></span>
+      <div class="search-bar">
+        <span><i class="fa-solid fa-search"></i></span>
+        <form action="">
           <input
             type="text"
             value=""
             placeholder="Tìm kiếm khoá học hay gì đó ..."
           />
-        </div>
-      </form>
+        </form>
+      </div>
       <!-- <div class="logo-navbar">logo</div> -->
       <div class="auth-navbar">
         <a href="register.html"><button class="register">Đăng ký</button></a>
@@ -89,14 +90,14 @@
           </li>
           <li>
             <button>
-              <a href="user.html"
+              <a href="profile.html"
                 ><span class="icon"><i class="fa-solid fa-user"></i></span
               ></a>
             </button>
           </li>
           <li>
             <button>
-              <a href="cart.html"
+              <a href="payment.html"
                 ><span class="icon"
                   ><i class="fa-solid fa-cart-shopping"></i></span
               ></a>
@@ -118,7 +119,7 @@
           </li>
           <li class="question-icon">
             <button>
-              <a href="faq.html"
+              <a href="about.html"
                 ><span class="icon"
                   ><i class="fa-solid fa-circle-question"></i></span
               ></a>
@@ -142,31 +143,31 @@
             <li>
               <span class="user-input">
                 <i class="fa-regular fa-user"></i
-                ><input type="text" placeholder="Nhập tên..." />
+                ><input type="text" placeholder="Nhập tên..." id="name"/>
               </span>
             </li>
             <li>
               <span class="user-input">
                 <i class="fa-regular fa-envelope"></i
-                ><input type="text" placeholder="Nhập email..." />
+                ><input type="text" placeholder="Nhập email..." id="email"/>
               </span>
             </li>
             <li>
               <span class="user-input">
                 <i class="fa-solid fa-lock"></i
-                ><input type="password" placeholder="Nhập mật khẩu..." />
+                ><input type="password" placeholder="Nhập mật khẩu..." id="password"/>
               </span>
             </li>
             <li>
               <span class="user-input">
                 <i class="fa-solid fa-lock"></i
-                ><input type="password" placeholder="Nhập lại mật khẩu..." />
+                ><input type="password" placeholder="Nhập lại mật khẩu..." id="confirmPassword"/>
               </span>
             </li>
           </form>
           <li>
-            <a href="login.html"><button>Đăng ký</button></a>
-            <span
+            <button onclick="handleRegisterButton()">Đăng ký</button>
+            <span class="under-button"
               ><small class="question">Đã có tài khoản?</small>
               <a href="login.html" class="register-link"
                 ><small>Đăng nhập ngay</small></a
@@ -177,5 +178,40 @@
       </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
   </body>
+  <footer>
+    <div class="row">
+      <div class="column">
+        <h4>Khoá học</h4>
+        <ul>
+          <li><a href="#">Khoá cơ bản</a></li>
+          <li><a href="#">Khoá nâng cao</a></li>
+          <li><a href="#">Khoá học lập trình web</a></li>
+          <li><a href="#">Khoá học cơ sở dữ liệu</a></li>
+          <li><a href="#">Khoá học lập trình thiết bị di động</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Giới thiệu</h4>
+        <ul>
+          <li><a href="about.html">Về trang web</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Câu hỏi thường gặp</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn cách mua hàng</a></li>
+          <li><a href="#">Hướng dẫn chỉnh sửa trang cá nhân</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Liên hệ</h4>
+        <ul>
+          <li><a href="#">Email góp ý</a></li>
+          <li><a href="#">Hotline hỗ trợ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </html>

@@ -1,0 +1,92 @@
+.body-detail .title{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  color: #72bcd4;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.body-detail .return-button button{
+  border: none;
+  background-color: #72bcd4;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 150px;
+  height: 30px;
+  margin-top: 3px;
+}
+.body-detail .return-button button:hover{
+  background-color: gray;
+}
+.body-detail .detail{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap:20px;
+  text-align: left;
+}
+.body-detail .detail .image{
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+/* .body-detail .detail .image::before{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  background-color: #72bcd4;
+  border-radius: 190px 100px 170px 180px;
+  left: calc(50% - 150px);
+  top: 50px;
+} */
+.body-detail .detail .image img{
+  width: 100%;
+  min-width: 300px;
+}
+.body-detail .detail .content .name{
+  font-size: 28px;
+  /* padding: 40px 0 0 0; */
+  color: gray;
+  margin: 0 0 10px 0;
+}
+.body-detail .detail .content .price{
+  font-weight: bold;
+  font-size: 24px;
+  color: gray;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+}
+.body-detail .detail .content .buttons{
+  display: flex;
+  margin-bottom: 20px;
+}
+.body-detail .detail .content .buttons .purchase-button{
+  background-color: white;
+  color: #72bcd4;
+  border: 1px solid #72bcd4;
+  padding: 15px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: none;
+  font-family: Poppins;
+  font-size: large;
+}
+.body-detail .detail .content .buttons .purchase-button:hover{
+  background-color: gray;
+  color: white;
+}
+.body-detail .detail .content .buttons .add-to-cart-button{
+  background-color: #72bcd4;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-right: none;
+  font-family: Poppins;
+  font-size: large;
+}
+.body-detail .detail .content .buttons .add-to-cart-button:hover{
+  background-color: gray;
+}

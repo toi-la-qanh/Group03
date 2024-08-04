@@ -3,41 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/bill.css" />
+    <link rel="stylesheet" href="css/payment.css" />
     <title>Đơn hàng</title>
   </head>
 
   <body>
     <!-- Thanh điều hướng -->
     <div class="navbar">
+      <!-- logo -->
+      <div class="logo">
+        <a href="home.html"><img src="images/logo.png" alt="Logo" /></a>
+      </div>
       <!-- Các khoá học -->
       <div class="navbar-courses">
-        <select name="" id="">
-          <option value="">Các khoá học</option>
-          <option value="">Khoá cơ bản</option>
-          <option value="">Khoá nâng cao</option>
-          <option value="">Khoá lập trình web</option>
-          <option value="">Khoá cơ sở dữ liệu</option>
-          <option value="">Khoá lập trình thiết bị di động</option>
-        </select>
+        <button>Các khoá học<i class="fa-solid fa-chevron-down"></i></button>
+        <ul>
+          <li>Khoá cơ bản</li>
+          <li>Khoá nâng cao</li>
+          <li>Khoá lập trình web</li>
+          <li>Khoá cơ sở dữ liệu</li>
+          <li>Khoá lập trình thiết bị di động</li>
+        </ul>
       </div>
       <!-- Thanh tìm kiếm -->
-      <form action="">
-        <div class="search-bar">
-          <span><i class="fa-solid fa-search"></i></span>
+      <div class="search-bar">
+        <span><i class="fa-solid fa-search"></i></span>
+        <form action="">
           <input
             type="text"
             value=""
             placeholder="Tìm kiếm khoá học hay gì đó ..."
           />
-        </div>
-      </form>
-      <!-- <div class="logo-navbar">logo</div> -->
+        </form>
+      </div>
       <div class="auth-navbar">
         <a href="register.html"><button class="register">Đăng ký</button></a>
         <a href="login.html"><button class="login">Đăng nhập</button></a>
@@ -62,14 +62,14 @@
           </li>
           <li>
             <button>
-              <a href="user.html"
+              <a href="profile.html"
                 ><span class="icon"><i class="fa-solid fa-user"></i></span
               ></a>
             </button>
           </li>
           <li>
             <button>
-              <a href="cart.html"
+              <a href="#"
                 ><span class="icon"
                   ><i class="fa-solid fa-cart-shopping"></i></span
               ></a>
@@ -91,7 +91,7 @@
           </li>
           <li class="question-icon">
             <button>
-              <a href="faq.html"
+              <a href="about.html"
                 ><span class="icon"
                   ><i class="fa-solid fa-circle-question"></i></span
               ></a>
@@ -115,23 +115,23 @@
             <form action="">
               <div class="input-box">
                 <span>Họ và tên: </span>
-                <input type="text" name="" id="" />
+                <input type="text" name="" id="name" />
               </div>
               <div class="input-box">
                 <span>Email: </span>
-                <input type="text" name="" id="" />
+                <input type="text" name="" id="email" />
               </div>
               <div class="input-box">
                 <span>Số điện thoại: </span>
-                <input type="text" name="" id="" />
+                <input type="text" name="" id="phone" />
               </div>
               <div class="input-box">
                 <span>Địa chỉ: </span>
-                <input type="text" name="" id="" />
+                <input type="text" name="" id="address" />
               </div>
               <div class="input-box">
                 <span>Ghi chú: </span>
-                <input type="text" name="" id="" />
+                <input type="text" name=""/>
               </div>
             </form>
           </div>
@@ -144,24 +144,79 @@
                 <p>
                   <span>Khoá học lập trình hướng đối tượng</span
                   ><span>Phân loại: Khoá nâng cao</span>
-                  <span>1.000.000 x1</span>
+                  <span class="price-and-button">
+                    <span class="price">1.000.000 </span>
+                    <span class="button-course">
+                      <button
+                        class="minus-button"
+                        onclick="handleMinusButton()"
+                      >
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                      <input type="text" class="input-quantity" value="1" />
+                      <button class="plus-button" onclick="handlePlusButton()">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </span>
+                  </span>
+                  <button class="delete-course">Xoá</button>
                 </p></span
               >
             </div>
             <div class="input-box">
-              <span style="font-style: italic; font-size: 12px;">* Thanh toán khi nhận hàng </span>
+              <span style="font-style: italic; font-size: 12px"
+                >* Thanh toán khi nhận hàng
+              </span>
               <span>Phí ship: 30.000 đ </span>
               <span>Tổng tiền: 1.030.000 đ </span>
             </div>
-            <div class="button-box">
-              <a href="cart.html"
-                ><button class="left-button"><i class="fa-solid fa-arrow-left"></i> Về lại giỏ hàng</button></a
-              ><button class="right-button">Thanh toán</button>
+            <div class="button-container">
+              <a href="home.html"
+                ><button class="return-button">
+                  <i class="fa-solid fa-arrow-left"></i> Tiếp tục mua sắm
+                </button></a
+              >
+              <a href="#"><button class="right-button" onclick="paidButton()">Thanh toán</button></a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/payment.js"></script>
   </body>
+  <footer>
+    <div class="row">
+      <div class="column">
+        <h4>Khoá học</h4>
+        <ul>
+          <li><a href="#">Khoá cơ bản</a></li>
+          <li><a href="#">Khoá nâng cao</a></li>
+          <li><a href="#">Khoá học lập trình web</a></li>
+          <li><a href="#">Khoá học cơ sở dữ liệu</a></li>
+          <li><a href="#">Khoá học lập trình thiết bị di động</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Giới thiệu</h4>
+        <ul>
+          <li><a href="about.html">Về trang web</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Câu hỏi thường gặp</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn cách mua hàng</a></li>
+          <li><a href="#">Hướng dẫn chỉnh sửa trang cá nhân</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Liên hệ</h4>
+        <ul>
+          <li><a href="#">Email góp ý</a></li>
+          <li><a href="#">Hotline hỗ trợ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </html>

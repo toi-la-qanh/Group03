@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css" />
+  </head>
+  <body>
+    <!-- Thanh điều hướng -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/logo.png" alt="Logo" /></a>
+      </div>
+      <!-- Các khoá học -->
+      <div class="navbar-courses">
+        <button>Các khoá học<i class="fa-solid fa-chevron-down"></i></button>
+        <ul>
+          <li>Khoá cơ bản</li>
+          <li>Khoá nâng cao</li>
+          <li>Khoá lập trình web</li>
+          <li>Khoá cơ sở dữ liệu</li>
+          <li>Khoá lập trình thiết bị di động</li>
+        </ul>
+      </div>
+      <!-- Thanh tìm kiếm -->
+      <div class="search-bar">
+        <span><i class="fa-solid fa-search"></i></span>
+        <form action="">
+          <input
+            type="text"
+            value=""
+            placeholder="Tìm kiếm khoá học hay gì đó ..."
+          />
+        </form>
+      </div>
+      <div class="auth-navbar">
+        <a href="register.html"><button class="register">Đăng ký</button></a>
+        <a href="login.html"><button class="login">Đăng nhập</button></a>
+      </div>
+    </div>
+    <!-- phần thân sau navbar -->
+    <div class="body-about">
+      <div class="title">GIỚI THIỆU VỀ A8</div>
+      <div class="content">
+        <div class="image-container">
+          <img src="images/background-logo.jpg" alt="" />
+          <div class="text">
+            <h3>BẠN CÓ BIẾT?</h3>
+            <br />
+            <p>
+              Ngoài kia có rất nhiều bạn làm sai nghề, tư duy an phận và bị chôn
+              chân với một công việc không đủ vui, không đủ sống, các bạn ấy gặp
+              hết khủng hoảng tuổi này tới tuổi kia.
+            </p>
+            <br />
+            <p>Tuổi 22 đang ngỡ ngàng không biết mình nên làm nghề gì.</p>
+            <p>
+              Tuổi 28 thì bàng hoàng không biết lương như mình thì lập gia đình
+              và nuôi dạy con cái làm sao. Tuổi 40 nuối tiếc thanh xuân của mình
+              liệu có phải đã phí hoài không nhỉ...
+            </p>
+          </div>
+        </div>
+        <div class="text2">
+          <p>
+            Mọi chuyện sẽ rất khác nếu họ được định hướng công việc phù hợp,
+            biết cách đặt cho mình một mục tiêu rõ ràng và có đầy đủ kĩ năng cần
+            thiết để phát triển sự nghiệp.
+          </p>
+          <br />
+          <p>
+            A8 tin rằng con người Việt Nam không hề thua kém gì so với con người
+            ở bất cứ nơi đâu. Con rồng cháu tiên hoàn toàn có thể trở thành công
+            dân toàn cầu để sánh vai cùng các cường quốc năm châu.
+          </p>
+          <br />
+          <p>
+            A8 mong muốn trở thành một tổ chức góp phần tạo nên sự thay đổi đó,
+            và việc tạo ra cộng đồng học lập trình mới chỉ là điểm bắt đầu.
+            Chúng tôi đang nỗ lực tạo ra các khóa học có nội dung chất lượng
+            vượt trội, giúp học viên sau khi hoàn thành khóa học có thể trở
+            thành những lập trình viên luôn được nhiều công ty săn đón.
+          </p>
+        </div>
+        <div class="text3">
+          <h3>BẠN SẼ NHẬN ĐƯỢC GÌ TỪ A8?</h3>
+          <div class="row">
+            <div class="column">
+              <h4>1. Sự thành thạo</h4>
+              <p>
+                Các bài học đi đôi với thực hành, làm bài kiểm tra ngay trên
+                trang web và bạn luôn có sản phẩm thực tế sau mỗi khóa học.
+              </p>
+            </div>
+            <div class="column">
+              <h4>2. Tính tự học</h4>
+              <p>
+                Một con người chỉ thực sự trưởng thành trong sự nghiệp nếu họ
+                biết cách tự thu nạp kiến thức mới cho chính mình.
+              </p>
+            </div>
+            <div class="column">
+              <h4>3. Tiết kiệm thời gian</h4>
+              <p>
+                Thay vì chật vật vài năm thì chỉ cần 4-6 tháng để có thể bắt đầu
+                công việc đầu tiên với vị trí Intern tại công ty IT.
+              </p>
+            </div>
+            <div class="column">
+              <h4>4. Làm điều quan trọng</h4>
+              <p>
+                Chỉ học và làm những điều quan trọng để đạt được mục tiêu đi làm
+                được trong thời gian ngắn nhất.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="icon-bar-and-arrow">
+      <!-- Mũi tên phải ở thanh công cụ -->
+      <div class="right-arrow">
+        <button onclick="handleRightArrow()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- thanh icon -->
+      <div class="icon-bar">
+        <ul>
+          <li>
+            <button>
+              <a href="home.html"
+                ><span class="icon"><i class="fa-solid fa-house"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="profile.html"
+                ><span class="icon"><i class="fa-solid fa-user"></i></span
+              ></a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="payment.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-cart-shopping"></i></span
+              ></a>
+            </button>
+          </li>
+          <!-- Menu thanh công cụ -->
+          <li>
+            <button onclick="showMoreElement()">
+              <span class="icon"><i class="fa-solid fa-ellipsis"> </i></span>
+            </button>
+          </li>
+          <li class="login-icon">
+            <button>
+              <a href="login.html"
+                ><span class="icon"
+                  ><i class="fa-solid fa-right-to-bracket"></i></span
+              ></a>
+            </button>
+          </li>
+          <li class="question-icon">
+            <button>
+              <a href="#"
+                ><span class="icon"
+                  ><i class="fa-solid fa-circle-question"></i></span
+              ></a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Mũi tên trái ở thanh công cụ -->
+    <div class="left-arrow">
+      <button onclick="handleLeftArrow()">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+  <footer>
+    <div class="row">
+      <div class="column">
+        <h4>Khoá học</h4>
+        <ul>
+          <li><a href="#">Khoá cơ bản</a></li>
+          <li><a href="#">Khoá nâng cao</a></li>
+          <li><a href="#">Khoá học lập trình web</a></li>
+          <li><a href="#">Khoá học cơ sở dữ liệu</a></li>
+          <li><a href="#">Khoá học lập trình thiết bị di động</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Giới thiệu</h4>
+        <ul>
+          <li><a href="about.html">Về A8</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Câu hỏi thường gặp</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn cách mua hàng</a></li>
+          <li><a href="#">Hướng dẫn chỉnh sửa trang cá nhân</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Liên hệ</h4>
+        <ul>
+          <li><a href="#">Email góp ý</a></li>
+          <li><a href="#">Hotline hỗ trợ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>

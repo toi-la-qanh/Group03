@@ -1,0 +1,221 @@
+.body-payment {
+  display: flex;
+  justify-content: center;
+}
+.body-payment .form-payment {
+  width: 700px;
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid gray;
+  margin-bottom: -50px;
+}
+.body-payment .form-payment .row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.body-payment .form-payment .row .column {
+  flex: 1 1 250px;
+}
+.body-payment .form-payment .row .column .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #72bcd4;
+}
+.body-payment .form-payment .row .column .input-box {
+  margin: 15px 0;
+}
+.body-payment .form-payment .row .column .input-box input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 15px;
+}
+/*Khung số lượng ở chỗ tăng giảm*/
+.body-payment .form-payment .row .column .input-box .input-quantity {
+  width: 20px;
+  padding: 2px;
+  margin: 3px;
+  text-align: center;
+  font-size: 13px;
+  border: none;
+}
+/*Dấu -*/
+.body-payment
+  .form-payment
+  .row
+  .column
+  .input-box
+  .image-container
+  p
+  .price-and-button
+  .button-course
+  .minus-button {
+  border: none;
+  color: #72bcd4;
+  background-color: inherit;
+  padding-right: 10px;
+  font-weight: 900;
+}
+.body-payment
+  .form-payment
+  .row
+  .column
+  .input-box
+  .image-container
+  p
+  .price-and-button
+  .button-course
+  .minus-button:hover {
+  color: gray;
+}
+/*Dấu +*/
+.body-payment
+  .form-payment
+  .row
+  .column
+  .input-box
+  .image-container
+  p
+  .price-and-button
+  .button-course
+  .plus-button {
+  border: none;
+  color: #72bcd4;
+  background-color: inherit;
+  margin-left: 10px;
+  align-items: center;
+  font-weight: 900;
+}
+.body-payment
+  .form-payment
+  .row
+  .column
+  .input-box
+  .image-container
+  p
+  .price-and-button
+  .button-course
+  .plus-button:hover {
+  color: gray;
+}
+.body-payment .form-payment .row .column .input-box span {
+  display: block;
+  margin-bottom: 10px;
+}
+.body-payment .form-payment .row .column .input-box .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.body-payment .form-payment .row .column .input-box .image-container img {
+  /* margin-right: 10px; */
+  width: 120px;
+  height: 120px;
+  min-height: 120px;
+}
+.body-payment .form-payment .row .column .input-box .image-container p {
+  flex: 1;
+  font-size: 14px;
+  line-height: 20px;
+}
+.body-payment
+  .form-payment
+  .row
+  .column
+  .input-box
+  .image-container
+  p
+  .price-and-button {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.body-payment
+  .form-payment
+  .row
+  .column
+  .input-box
+  .image-container
+  p
+  .price-and-button
+  .button-course {
+    display: flex;
+  float: right;
+}
+.body-payment
+  .form-payment
+  .row
+  .column
+  .input-box
+  .image-container
+  p
+  .delete-course {
+  float: right;
+  border: none;
+  background-color: inherit;
+  color: #72bcd4;
+}
+.body-payment
+  .form-payment
+  .row
+  .column
+  .input-box
+  .image-container
+  p
+  .delete-course:hover {
+  color: red;
+  font-size: medium;
+}
+.body-payment .form-payment .button-container {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+.body-payment .form-payment .button-container a {
+  width: 100%;
+}
+.body-payment .form-payment .button-container .right-button {
+  width: 100%;
+  background-color: #72bcd4;
+  color: white;
+  border: 0;
+  font-weight: 700;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+  height: 40px;
+}
+.body-payment .form-payment .button-container .right-button a {
+  text-decoration: none;
+  color: white;
+}
+.body-payment .form-payment .button-container .right-button:hover {
+  background-color: gray;
+}
+.body-payment .form-payment .button-container .return-button {
+  width: 100%;
+  padding-left: 2px;
+  padding-right: 5px;
+  color: #72bcd4;
+  height: 40px;
+  background-color: inherit;
+  border: 1px solid #72bcd4;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 700;
+}
+.body-payment .form-payment .button-container .return-button:hover {
+  background-color: gray;
+  color: white;
+}
+@media (max-width: 700px) {
+  .body-payment .form-payment {
+    width: 100%;
+  }
+}

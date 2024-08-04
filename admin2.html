@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quản lý đơn hàng</title>
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>
+	<h1>Quản lý đơn hàng</h1>
+	<nav>
+		<ul>
+			<li><a href="admin1.html" onclick="showProductsManagement()">Quản lý mặt hàng</a></li>
+			<li><a href="admin.html" onclick="showDashboard()">Trang chủ</a></li>
+		</ul>
+	</nav>
+	
+	<h2>Danh sách đơn hàng</h2>
+	
+	<table id="order-table">
+		<thead>
+			<tr>
+				<th>Mã đơn hàng</th>
+				<th>Tên khách hàng</th>
+				<th>Tình trạng đơn hàng</th>
+				<th>Chỉnh sửa</th>
+			</tr>
+		</thead>
+		<tbody id="order-list">
+			<tr>
+				<td>001</td>
+				<td>Nguyễn Văn A</td>
+				<td>Chưa thanh toán</td>
+				<td>
+					<button>Sửa</button>
+					<button>Xoá</button>
+				</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>Nguyễn Văn B</td>
+				<td>Đang giao hàng</td>
+				<td>
+					<button>Sửa</button>
+					<button>Xoá</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div id="update-order-status-form">
+		<form>
+			<label for="order-status">Tình trạng đơn hàng:</label>
+			<select id="order-status" name="order-status">
+				<option value="chua-thanh-toan">Chưa thanh toán</option>
+				<option value="da-thanh-toan">Đã thanh toán</option>
+			</select><br><br>
+			<button type="submit">Cập nhật tình trạng đơn hàng</button>
+		</form>
+	</div>
+	
+</body>
+</html>
